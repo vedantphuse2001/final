@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+i {
+  color: white;
+}
+.topnav {
+  display: flex;
+    flex-wrap: wrap;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.left {
+  margin-left: 60px;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+.right a:hover {
+  text-decoration: underline;
+}
+.icon {
+  display: none;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.pre {
+  width: 100vw;
+  height: 94vh;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 7vh;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 40;
+}
+.open {
+  animation: ayo 2s ease-out;
+}
+.close {
+  animation: ayo1 1s ease-out;
+}
+@keyframes ayo1 {
+  0% {
+    opacity: 1;
+    clip-path: circle(800px);
+    -webkit-clip-path: circle(800px);
+  }
+  50% {
+    opacity: 1;
+
+    clip-path: circle(500px);
+    -webkit-clip-path: circle(500px);
+  }
+  100% {
+    opacity: 0;
+    background-color: gray;
+    clip-path: circle(10%);
+    -webkit-clip-path: circle(10%);
+  }
+}
+@keyframes ayo {
+  0% {
+    opacity: 0;
+    background-color: gray;
+    clip-path: circle(10%);
+    -webkit-clip-path: circle(10%);
+  }
+  50% {
+    opacity: 0.5;
+    background-color: black;
+    clip-path: circle(500px);
+    -webkit-clip-path: circle(500px);
+  }
+  100% {
+    opacity: 0.8;
+    clip-path: circle(1000px);
+    -webkit-clip-path: circle(1000px);
+  }
+}
+.pre div {
+  padding: 5px;
+  margin-top: 30px;
+}
+.pre a {
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.pre a:hover {
+  text-decoration: underline;
+}
+.preview {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .right a:not(:last-child) {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .left {
+    margin-left: 30px;
+  }
+  .home {
+    display: block;
+  }
+
+}
