@@ -1,0 +1,84 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+
+
+#home3::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.99;
+}
+
+.drone3 img {
+  width: 641px;
+  height: 356px;
+  margin: 6px 713px;
+  position: absolute;
+}
+
+#home3::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  #home3::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+  }
+
+  .drone3 img {
+    width: 80%;
+    height: 20%;
+    margin: 45% 13%;
+    position: absolute
+  }
+
+  #home3::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+
+
+
+}
