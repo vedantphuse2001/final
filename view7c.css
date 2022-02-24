@@ -1,0 +1,145 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+#home7c {
+    display: flex;
+    flex-direction: row;
+}
+
+#home7c::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    overflow-y: hidden;
+    animation: sky 5.5s 2s forwards;
+}
+
+
+
+.city7c img {
+    position: absolute;
+    bottom: 0px;
+    left: 180px;
+}
+
+
+
+.drone7c img {
+    width: 36vw;
+    height: 39vh;
+    position: absolute;
+    margin: 6px 713px;
+    animation: fly 1s infinite;
+    animation-delay: 0.5s;
+    z-index: 20;
+}
+
+@keyframes fly {
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#home7c::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.moon7c{
+    background-color: transparent;
+    width: 79px;
+    height: 79px;
+
+    top: 42vh;
+    left: 86vw;
+    border-radius: 50%;
+    box-shadow: -20px 10px white;
+    position: absolute;
+ 
+    opacity: 1;
+    animation: move 6s forwards;
+
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(-20deg) translateX(-34vw) translateY(-70vh) rotate(-37deg);
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .drone7c img {
+
+        width: 62vw;
+        height: 25vh;
+        margin: 18vw;
+        position: absolute;
+        animation: fly 1s infinite;
+        animation-delay: 0.5s;
+        margin-top: 18vh;
+        z-index: 20;
+    }
+
+    .city7c img {
+        position: absolute;
+        bottom: 0vh;
+        height: 30vh;
+        width: 100vw;
+        left: -2vw;
+        animation: sky1 3s forwards;
+    }
+
+    .moon7c {
+        /* visibility: hidden; */
+        background-color: transparent;
+        width: 14vw;
+        height: 14vw;
+
+        top: 23vh;
+        left: 79vw;
+        border-radius: 50%;
+        box-shadow: -20px 10px white;
+        position: absolute;
+     
+        opacity: 1;
+        animation: move1 6s  forwards;
+        
+
+    }
+
+    @keyframes move1 {
+        0% {
+            transform: rotate(-19deg) translateX(-25vw) translateY(-25vh) rotate(-37deg);
+        }
+    }
+}
