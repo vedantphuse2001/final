@@ -1,0 +1,117 @@
+
+
+
+#home6 {
+    display: flex;
+    flex-direction: row;
+}
+
+#home6::before {
+    content: "";
+    background-color: #b0e7ff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    overflow-y: hidden;
+
+}
+
+.city6 img {
+    position: absolute;
+    bottom: -50px;
+    left: 180px;
+    animation: sky 5s forwards;
+}
+
+.sun6 {
+    position: absolute;
+
+    width: 79px;
+    height: 79px;
+    top: 68vh;
+    left: -19vw;
+    border-radius: 40px;
+    background: #FFC700;
+    animation: move 4s forwards;
+
+
+
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(20vw)
+    }
+}
+
+
+
+
+
+
+.drone6 img {
+    width: 641px;
+    height: 356px;
+    margin: 6px 713px;
+    position: absolute;
+    animation: fly 1s infinite;
+    animation-delay: 0.5s;
+    z-index: 20;
+}
+
+@keyframes sky {
+    0% {
+        transform: translateY(60vh);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  
+
+    .city6 img {
+        position: absolute;
+        bottom: 0vh;
+        height: 30vh;
+        width: 100vw;
+        left: -2vw;
+        animation: sky1 3s forwards;
+    }
+
+    @keyframes sky1 {
+        0% {
+            transform: translateY(153vh);
+        }
+    }
+
+    .sun6 {
+        position: absolute;
+
+        width: 14vw;
+        height: 14vw;
+        top: 35vh;
+        left: -18vw;
+        border-radius: 40px;
+        background: #FFC700;
+        animation: move 4s forwards;
+
+
+
+    }
+
+    .drone6 img {
+        width: 62vw;
+        height: 25vh;
+        margin: 18vw;
+        position: absolute;
+        animation: fly 1s infinite;
+        animation-delay: 0.5s;
+        margin-top: 18vh;
+        z-index: 20;
+    }
+
+}
