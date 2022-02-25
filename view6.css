@@ -65,7 +65,7 @@
 
 @keyframes sky {
     0% {
-        transform: translateY(30vh);
+        transform: translateY(60vh);
     }
 }
 
@@ -84,7 +84,7 @@
 
     @keyframes sky1 {
         0% {
-            transform: translateY(153vh);
+            transform: translateY(425px);
         }
     }
 
